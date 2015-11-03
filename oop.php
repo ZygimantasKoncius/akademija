@@ -1,6 +1,7 @@
 <?php
 class Bidder{
-    private $firstName,$lastName;
+    private $firstName;
+    private $lastName;
     private $mail;
     private $gender;
 
@@ -88,7 +89,10 @@ $bidder1=new Bidder("Bert","Rose","rose@phoroneus.com","female");
 $bidder2=new Bidder("Rush", "Tommy","rush@chronos.com","male");
 
 class Article{
-    private $article, $price, $anotation, $date;
+    private $article;
+    private $price;
+    private $anotation;
+    private $date;
 
     public function __construct($article, $price, $anotation, $date){
         $this->article = $article;
@@ -170,7 +174,9 @@ $article = new Article("Gold Watch","10","New with tags: A brand-new, unused, an
     (such as the original box or bag) and/or with the original tags attached", '2015-10-26 15:45');
 
 class Bid{
-    private $bidder, $value, $date;
+    private $bidder;
+    private $value;
+    private $date;
 
     public function __construct($bidder, $value, $date){
         $this->bidder=$bidder;
